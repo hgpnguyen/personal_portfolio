@@ -2,9 +2,10 @@ interface ButtonParameters {
   className?: string;
   size?: "sm" | "default" | "lg";
   children: any;
+  [key: string]: any;
 }
 
-export const Button = ({ className = "", size = "default", children }: ButtonParameters) => {
+export const Button = ({ className = "", size = "default", children, ...props }: ButtonParameters) => {
     const baseClasses = 
         "relative overflow-hidden rounded-full font-medium focus:outline-non focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25";
 
@@ -15,7 +16,7 @@ export const Button = ({ className = "", size = "default", children }: ButtonPar
     }    
     const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
     return (
-    <button className={classes}>
+    <button className={classes} {...props}>
         <span className="relative flex items-center justify-center gap-2">{children}</span>
     </button>)
 }
