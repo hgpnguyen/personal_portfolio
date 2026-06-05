@@ -1,7 +1,7 @@
 interface ButtonParameters {
   className?: string;
   size?: "sm" | "default" | "lg";
-  children: string;
+  children: any;
 }
 
 export const Button = ({ className = "", size = "default", children }: ButtonParameters) => {
