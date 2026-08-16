@@ -30,7 +30,7 @@ export const Navbar = () => {
         <nav className="container mx-auto px-6 flex items-center justify-between">
             <a href="#" 
                className="text-xl font-bold tracking-tight hover:text-primary">
-                PM<span className="text-primary">.</span>
+                HGPN<span className="text-primary">.</span>
             </a>
 
             {/* Desktop Nav */}
