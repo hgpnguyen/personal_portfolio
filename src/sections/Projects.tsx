@@ -4,40 +4,37 @@ import { ArrowUpRight } from "lucide-react"
 
 const projects = [
     {
-    title: "Fintech Dashboard",
+    title: "LittleLemon",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
+      "A restaurant API developed with role-based access for Customers, Managers, and Delivery Crew. Customers can view the menu, manage \
+cart, and place orders. Managers can manage menu items, orders, and user roles. Delivery crew can update order status. Results are \
+paginated, with filtering and search capabilities.",
+    image: "projects/littleLemon.png",
+    tags: ["Python", "Django", "PostgreSQL", "Docker"],
     link: "#",
-    github: "#",
+    github: "https://github.com/hgpnguyen/restaurant",
   },
-  {
-    title: "E-Commerce Platform",
+  /*{
+    title: "OpenWeather API",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+      "A CLI Python application that retrieves weather data from the OpenWeather API for a specified region, optimized through parallel API calls to\
+efficiently collect data from multiple locations. The user inputs a bounding box to define the region and retrieve all weather data in that region.\
+A detailed README is included, outlining setup, usage, and the optimization approach.",
+    image: "",
+    tags: ["Python", "Asyncio", "CLI"],
     link: "#",
-    github: "#",
-  },
+    github: "https://github.com/hgpnguyen/openWeather",
+  },}*/
   {
-    title: "AI Writing Assistant",
+    title: "Task Manager",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+      "A Task Management API developed enables users to create, update, delete, and view tasks, each with a title, description, due date, and\
+status, stored in PostgreSQL. Users can retrieve all tasks or filter them by status, with results returned in paginated format. A detailed\
+README provides instructions for setting up PostgreSQL, configuring the server, usage, and design decisions.",
+    image: "projects/taskManager.png",
+    tags: ["Python", "Django", "PostgreSQL", "Docker"],
     link: "#",
-    github: "#",
-  },
-  {
-    title: "Project Management Tool",
-    description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+    github: "https://github.com/hgpnguyen/task_management",
   },
 ]
 
@@ -123,11 +120,11 @@ export const Projects = () => {
             </div>
 
             {/* View All CTA */}
-            <div className="text-center mt-12 animate-fade-in animation-delay-500">
+            {/*<div className="text-center mt-12 animate-fade-in animation-delay-500">
                 <AnimatedBorderButton>
                     View All Project
                 </AnimatedBorderButton>
-            </div>
+            </div>*/}
         </div>
      </section>
     )

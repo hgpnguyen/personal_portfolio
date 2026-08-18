@@ -20,6 +20,15 @@ const skills = [
 ]
 
 export const Hero = () => {
+    const downloadCV = () => {
+        console.log("Downloading CV...");
+        const link = document.createElement("a");
+        link.href = "/Nguyen_Hua_Gia_Phuc_CV.pdf";
+        link.download = "Nguyen_Hua_Gia_Phuc_CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     const socialLinks = [
                         {icon: Github, href: "https://github.com/hgpnguyen"},
                         {icon: Linkedin, href: "https://www.linkedin.com/in/hua-gia-phuc-nguyen-85514a170"},  
@@ -85,10 +94,10 @@ export const Hero = () => {
 
                     {/* CTAs */}
                     <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                        <Button size="lg" >
+                        <Button size="lg" onClick={() => (window.location.href = "#contact")}>
                             Contact Me <ArrowRight className="w-5 h-5" />
                         </Button>
-                        <AnimatedBorderButton>
+                        <AnimatedBorderButton onClick={downloadCV}>
                             <Download className="w-5 h-5" />
                             Download CV
                         </AnimatedBorderButton>

@@ -1,5 +1,9 @@
+interface Parameters {
+  children: any;
+  [key: string]: any;
+}
 
-export const AnimatedBorderButton = ({ children } : { children: any}) => {
+export const AnimatedBorderButton = ({ children, ...props } : Parameters) => {
     return  (
         <button 
          className="relative bg-transparent border border-border 
@@ -8,7 +12,8 @@ export const AnimatedBorderButton = ({ children } : { children: any}) => {
        focus-visible:ring-primary focus-visible:ring-offset-2 
          disabled:opacity-50 disabled:cursor-not-allowed group 
          px-8 py-4 text-lg font-medium rounded-full overflow-visible 
-         animated-border"
+         animated-border" 
+         {...props}
         >
             {/* Animated SVG Border */}
             <svg

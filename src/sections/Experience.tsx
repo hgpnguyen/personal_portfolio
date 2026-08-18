@@ -1,40 +1,33 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "11/2025 — 05/2026",
+    role: "Research Assistant",
+    company: "Loma Linda University",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
-    current: true,
-  },
-  {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
-    description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "Architected modular data pipelines in Python to preprocess and analyze high-dimensional radiomic datasets for survival rate prediction. \
+      Developed and validated predictive machine learning models using Scikit-learn, implementing robust feature selection and crossvalidation frameworks",
+    technologies: ["Python", "Scikit-learn", "Pandas", "NumPy"],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
+    period: "04/2025 - 10/2025",
+    role: "Software Engineer",
+    company: "KTest JSC",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
+      "Engineered a scalable backend for an AI-driven legal-tech platform using Python and Django, handling complex regulatory queries. Designed automated document-parsing logic and state-management systems to facilitate high-accuracy data entry for legal filings.",
+    technologies: ["Python", "Django", "PostgreSQL", "Docker"],
     current: false,
   },
   {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
+    period: "02/2023 - 08/2024",
+    role: "Research Engineer",
+    company: "SCIS Singapore Management University",
     description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Researched and developed method to generate programming exercises using Python and OpenAI, resulting in a comprehensive database of over 100 exercises tailored for beginner students. \
+      Leveraged Flask and TypeScript to create a Visual Studio Code extension that enhanced student engagement and improved exercise generation efficiency by 30%.",
+    technologies: ["Python", "Flask", "TypeScript", "Visual Studio Code"],
     current: false,
-  },
+  }
 ];
 
 
