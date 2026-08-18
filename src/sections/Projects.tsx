@@ -1,4 +1,4 @@
-import { AnimatedBorderButton } from "@/components/AnimatedBorderButton"
+//import { AnimatedBorderButton } from "@/components/AnimatedBorderButton"
 import { Github } from "@/components/Icons"
 import { ArrowUpRight } from "lucide-react"
 
